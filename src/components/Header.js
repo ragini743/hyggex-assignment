@@ -6,7 +6,7 @@ const Header = () => {
         setNav(!nav)
     }
   return (
-    <div className='flex justify-between items-center flex-wrap'>
+    <div className='flex justify-between items-center flex-wrap md:flex-nowrap'>
         <div className='w-[30%] mr-[20%]'>
             <img src="./Component 40.png" alt ="logo"></img>
         </div>
