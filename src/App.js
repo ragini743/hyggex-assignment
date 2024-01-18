@@ -5,7 +5,7 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="App py-10 px-6 md:p-10 max-w-screen-md mx-auto border-gray-400 border-2 shadow-lg my-4">
+    <div className="App py-10 px-6 md:p-10 max-w-screen-md mx-auto md: border-gray-400 md:border-2 md:shadow-lg md:my-4">
      <Header />
      <Body />
      <Footer />

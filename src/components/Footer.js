@@ -4,6 +4,7 @@ import QuesFooter from "./QuesFooter";
 
 const Footer = () => {
   const [showId, setShowId] = useState(0);
+
   const handleAnswer = (id) => {
     setShowId(id);
   };
@@ -14,7 +15,7 @@ const Footer = () => {
       <h1 className="font-extrabold text-blue-950 text-[2rem] md:text-[2.5rem] py-4">
         FAQ
       </h1>
-      <div>
+      <div className="mt-4">
         {footerData.map((value) => {
           return (
             <QuesFooter
@@ -23,10 +24,9 @@ const Footer = () => {
               handleAnswer={handleAnswer}
               showId={showId}
               setShowId={setShowId}
-              isActive={value.id === showId ? "true" : false}
+              // isActive={value.id === showId ? "true" : false}
             />
           );
-          // console.log(value.id)
         })}
       </div>
     </div>
